@@ -3,14 +3,14 @@
   <Modules />
   <Pages />
   <Files>
-    <File path="~/bin/Arena.Custom.RC.Utilities.dll" _source="bin/Debug/Arena.Custom.RC.Utilities.dll" />
-    <File path="~/Custom/RC/Utilities/FileUploader/cancel.png" _source="Files/FileUploader/cancel.png" />
-    <File path="~/Custom/RC/Utilities/FileUploader/FileUploader.ashx" _source="Files/FileUploader/FileUploader.ashx" />
-    <File path="~/Custom/RC/Utilities/FileUploader/jquery.uploadify.min.js" _source="Files/FileUploader/jquery.uploadify.min.js" />
-    <File path="~/Custom/RC/Utilities/FileUploader/swfobject.js" _source="Files/FileUploader/swfobject.js" />
-    <File path="~/Custom/RC/Utilities/FileUploader/uploadify.css" _source="Files/FileUploader/uploadify.css" />
-    <File path="~/Custom/RC/Utilities/FileUploader/uploadify.swf" _source="Files/FileUploader/uploadify.swf" />
-    <File path="~/Custom/RC/Utilities/AjaxTask.ashx" _source="Files/AjaxTask.ashx" />
+    <File path="bin/Arena.Custom.RC.Utilities.dll" _source="bin/Debug/Arena.Custom.RC.Utilities.dll" />
+    <File path="Custom/RC/Utilities/FileUploader/cancel.png" _source="Files/FileUploader/cancel.png" />
+    <File path="Custom/RC/Utilities/FileUploader/FileUploader.ashx" _source="Files/FileUploader/FileUploader.ashx" />
+    <File path="Custom/RC/Utilities/FileUploader/jquery.uploadify.min.js" _source="Files/FileUploader/jquery.uploadify.min.js" />
+    <File path="Custom/RC/Utilities/FileUploader/swfobject.js" _source="Files/FileUploader/swfobject.js" />
+    <File path="Custom/RC/Utilities/FileUploader/uploadify.css" _source="Files/FileUploader/uploadify.css" />
+    <File path="Custom/RC/Utilities/FileUploader/uploadify.swf" _source="Files/FileUploader/uploadify.swf" />
+    <File path="Custom/RC/Utilities/AjaxTask.ashx" _source="Files/AjaxTask.ashx" />
   </Files>
   <Info>
     <Distributor>RefreshCache</Distributor>
@@ -24,5 +24,5 @@ FileUploader - Flash based upload WebControl that provides real-time user feedba
 AjaxTask - Provides a method to perform long-running tasks in the background.
 JSImport - JavaScript Import. Provides a safe method of importing JS files.</Changelog>
   </Info>
-  <Migration _source="" />
+  <Migration _source="Setup/bin/Debug/Arena.Custom.RC.Utilities.Setup.dll" />
 </ArenaPackage>
