@@ -62,4 +62,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Users\daniel\Documents\Visual Studio 2008\Projects\RefreshCache\Package Builder\bin\Debug\pbcli.exe" ..\..\..\package.xml ..\..\..\ ..\..\..\Arena.Custom.RC.Utilities.xml</PostBuildEvent>
+  </PropertyGroup>
 </Project>
