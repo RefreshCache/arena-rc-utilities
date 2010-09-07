@@ -22,7 +22,7 @@ namespace Arena.Custom.RC.Utilities.Setup
                 tb.Columns.Add(new Column("guid", ColumnType.UniqueIdentifier, ColumnAttribute.NotNull));
                 tb.Columns.Add(new Column("date_created", ColumnType.DateTime, ColumnAttribute.NotNull));
                 tb.Columns[tb.Columns.Count - 1].Default = "GETDATE()";
-                tb.Columns.Add(new Column("status", ColumnType.Int, 80));
+                tb.Columns.Add(new Column("status", ColumnType.Int));
                 tb.Columns[tb.Columns.Count - 1].Default = "0";
                 tb.Columns.Add(new Column("progress", ColumnType.Numeric, ColumnAttribute.NotNull, -1, 18, 2));
                 tb.Columns[tb.Columns.Count - 1].Default = "0";
@@ -43,10 +43,11 @@ namespace Arena.Custom.RC.Utilities.Setup
         {
             public override void Upgrade(Database db)
             {
-                db.ExecuteNonQuery("CREATE PROCEDURE [cust_rc_util_sp_getAjaxTaskByID]\n" +
-                    "    @TaskID int\n" +
-                    "AS\n" +
-                    "    SELECT * FROM [cust_rc_util_ajax_task] WHERE [task_id] = @TaskID\n"
+                db.ExecuteNonQuery(
+@"CREATE PROCEDURE [cust_rc_util_sp_getAjaxTaskByID]
+    @TaskID AS int
+AS
+    SELECT * FROM [cust_rc_util_ajax_task] WHERE [task_id] = @TaskID"
                     );
             }
 
@@ -61,10 +62,11 @@ namespace Arena.Custom.RC.Utilities.Setup
         {
             public override void Upgrade(Database db)
             {
-                db.ExecuteNonQuery("CREATE PROCEDURE [cust_rc_util_sp_getAjaxTaskByGUID]\n" +
-                    "    @Guid uniqueidentifier\n" +
-                    "AS\n" +
-                    "    SELECT * FROM [cust_rc_util_ajax_task] WHERE [guid] = @Guid\n"
+                db.ExecuteNonQuery(
+@"CREATE PROCEDURE [cust_rc_util_sp_getAjaxTaskByGUID]
+    @Guid uniqueidentifier
+AS
+    SELECT * FROM [cust_rc_util_ajax_task] WHERE [guid] = @Guid"
                     );
             }
 
@@ -79,10 +81,11 @@ namespace Arena.Custom.RC.Utilities.Setup
         {
             public override void Upgrade(Database db)
             {
-                db.ExecuteNonQuery("CREATE PROCEDURE [cust_rc_util_sp_pruneAjaxTasks]\n" +
-                    "    @Age int\n" +
-                    "AS\n" +
-                    "    DELETE FROM [cust_rc_util_ajax_task] WHERE [date_created] < DATEADD(hh, -(@Age), GETDATE())\n"
+                db.ExecuteNonQuery(
+@"CREATE PROCEDURE [cust_rc_util_sp_pruneAjaxTasks]
+    @Age int
+AS
+    DELETE FROM [cust_rc_util_ajax_task] WHERE [date_created] < DATEADD(hh, -(@Age), GETDATE())"
                     );
             }
 
