@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -12,6 +12,11 @@
     <AssemblyName>Arena.Custom.RC.Utilities.Setup</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Packager\RefreshCache.Packager.csproj">
+    <ProjectReference Include="..\..\RefreshCache.Packager\RefreshCache.Packager.csproj">
       <Project>{EDF42407-6AB7-42ED-88CC-54E063A584F9}</Project>
       <Name>RefreshCache.Packager</Name>
     </ProjectReference>
@@ -63,6 +68,6 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>"C:\Users\daniel\Documents\Visual Studio 2008\Projects\RefreshCache\Package Builder\bin\Debug\pbcli.exe" ..\..\..\package.xml ..\..\..\ ..\..\..\Arena.Custom.RC.Utilities.xml</PostBuildEvent>
+    <PostBuildEvent>"C:\Program Files (x86)\RefreshCache\Package Builder\pbcli.exe" ..\..\..\package.xml ..\..\..\ ..\..\..\Arena.Custom.RC.Utilities.xml</PostBuildEvent>
   </PropertyGroup>
 </Project>
