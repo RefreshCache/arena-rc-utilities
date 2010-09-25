@@ -13,6 +13,7 @@
     <File path="Custom/RC/Utilities/FileUploader/uploadify.css" _source="Library/Files/FileUploader/uploadify.css" />
     <File path="Custom/RC/Utilities/FileUploader/uploadify.swf" _source="Library/Files/FileUploader/uploadify.swf" />
     <File path="Custom/RC/Utilities/AjaxTask.ashx" _source="Library/Files/AjaxTask.ashx" />
+    <File path="bin/ArenaWeb.UserControls.Custom.RC.Utilities.dll" _source="UserControls/bin/ArenaWeb.UserControls.Custom.RC.Utilities.dll" />
   </Files>
   <Info>
     <Distributor>RefreshCache</Distributor>
