@@ -92,7 +92,6 @@
     <Content Include="Files\FileUploader\swfobject.js" />
     <Content Include="Files\FileUploader\uploadify.css" />
     <Content Include="Files\FileUploader\uploadify.swf" />
-    <Content Include="package.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Files\AjaxTask.ashx" />
