@@ -13,7 +13,7 @@ using Arena.Core;
 using Arena.Portal;
 using Arena.Security;
 
-namespace Arena.Custom.RC.Utilities
+namespace ArenaWeb.UserControls.Custom.RC.Utilities
 {
     public partial class BooleanLogic : PortalControl
     {
