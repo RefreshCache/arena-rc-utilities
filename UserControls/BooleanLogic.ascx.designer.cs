@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Arena.Custom.RC.Utilities {
+namespace ArenaWeb.UserControls.Custom.RC.Utilities {
     
     
     public partial class BooleanLogic {
