@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="BooleanLogic.ascx.cs">
       <DependentUpon>BooleanLogic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="BooleanLogic.ascx.designer.cs">
       <DependentUpon>BooleanLogic.ascx</DependentUpon>
