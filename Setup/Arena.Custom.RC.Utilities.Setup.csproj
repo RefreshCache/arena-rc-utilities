@@ -53,6 +53,12 @@
     <Compile Include="Setup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RC.Packager\Packager\RefreshCache.Packager.csproj">
+      <Project>{EDF42407-6AB7-42ED-88CC-54E063A584F9}</Project>
+      <Name>RefreshCache.Packager</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
