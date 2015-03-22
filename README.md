@@ -1,0 +1,1 @@
+This project provides a set of utilities that can be used in Arena. The feature set is currently small but should grow quickly. If you have a request of a helpful utility (table, stored procedure, etc, user control, etc.) feel free to either submit it to the repository or post a feature request. This project is developed and maintained as a RefreshCache community project.
